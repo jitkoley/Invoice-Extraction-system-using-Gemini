@@ -23,7 +23,7 @@ def initialize_model(model_name="gemini-pro-vision"):
 st.title("Welcome To Invoice Information Extractor 🧑‍💻")
 st.write("---")
 
-# Read the prompt in text box
+# Take the input query from user
 prompt = st.chat_input("Provide your information  ", key="prompt")
 
 # interface to upload image
@@ -62,14 +62,14 @@ if uploaded_image is not None: # file upload handling
 
 
 
-# set the model behavior
+# set the model behavior using prompting 
 model_behavior = """
 Your are an expert who understand invoice overall structures and has deep knowledge on it.
 We will upload the invoice image and you have to answer the question based on information 
 present in the invoice image.
 """
 
-# if user pressed submit button
+# Process the Response
 if  prompt:
     with st.spinner("Extracting yor Info Please wait..."):
     
