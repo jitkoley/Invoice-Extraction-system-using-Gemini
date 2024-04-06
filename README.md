@@ -6,7 +6,9 @@ Sure, here's a README.md file for your Streamlit application:
 
 Welcome to the Invoice Information Extractor application! This tool utilizes Gemini-Pro-Vision, a powerful generative AI model, to extract information from invoice images.
 
+
 ## Getting Started
+
 
 ### Prerequisites
 - Python 3.x
